@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Personal Expence Tracker</title>
+
+      <!-- remix icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+      <!-- css link -->
+      <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+      <header>
+            <div class="header">
+                  <h1>Good Morning, <span>Kitty</span>!</h1>
+
+                  <div class="header-controls">
+                        <div class="dropdown">
+                              Daily <i class="ri-arrow-drop-down-line"></i>
+                        </div>
+                        <div class="date-picker">
+                              <i class="ri-calendar-check-line"></i>
+                              <span>16 August 2023</span>
+                        </div>
+
+                        <button class="export-btn">
+                              <i class="ri-mail-download-fill"></i>
+                              Export
+                        </button>
+                  </div>
+            </div>
+      </header>
+
+      <main>
+            <div class="main-content">
+
+                  <div class="dashboard-grid">
+                        <div class="card">
+                              <div class="card-header">
+                                    <h3 class="card-title">Monthly Income</h3>
+                                    <button class="card-menu">
+                                          <i class="ri-more-2-fill"></i>
+                                    </button>
+                              </div>
+                              
+                              <div class="amount income-amount">$<span>2,560.00</span></div>
+                              
+                              <div class="change">
+                                    <i class="ri-arrow-up-fill"></i>
+                                    10% vs last month
+                              </div>
+                        </div>
+                        
+                        <div class="card">
+                              <div class="card-header">
+                                    <h3 class="card-title">Monthly Expenses</h3>
+                                    <button class="card-menu">
+                                          <i class="ri-more-2-fill"></i>
+                                    </button>
+                              </div>
+
+                              <div class="amount monthly-amount">$<span>1,890.00</span></div>
+
+                              <div class="change">
+                                    <i class="ri-arrow-up-fill"></i>
+                                    10% vs last month
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+      </main>
+
+
+      <script src="assets/js/script.js"></script>
+</body>
+
+</html>

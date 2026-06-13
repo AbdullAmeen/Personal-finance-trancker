@@ -2,113 +2,142 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Personal Expence Tracker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expence Tracker</title>
 
-      <!-- remix icon -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
 
-      <!-- css link -->
-      <link rel="stylesheet" href="assets/css/style.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-      <header>
-            <div class="header">
-                  <h1>Good Morning, <span>Kitty</span>!</h1>
+    <header>
+        <div class="header">
+            <h1>Good Morning, <span>Kitty</span>!</h1>
 
-                  <div class="header-controls">
-                        <div class="dropdown">
-                              Daily <i class="ri-arrow-drop-down-line"></i>
-                        </div>
-                        <div class="date-picker">
-                              <i class="ri-calendar-check-line"></i>
-                              <span>16 August 2023</span>
-                        </div>
+            <div class="header-controls">
+                <div class="dropdown">
+                    Daily <i class="ri-arrow-drop-down-line"></i>
+                </div>
+                <div class="date-picker">
+                    <i class="ri-calendar-check-line"></i>
+                    <span>16 August 2023</span>
+                </div>
 
-                        <button class="export-btn">
-                              <i class="ri-mail-download-fill"></i>
-                              Export
+                <button class="export-btn">
+                    <i class="ri-mail-download-fill"></i>
+                    Export
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Monthly Income</h3>
+                        <button class="card-menu">
+                            <i class="ri-more-2-fill"></i>
                         </button>
-                  </div>
+                    </div>
+
+                    <div class="amount income-amount">$<span>2,560.00</span></div>
+
+                    <div class="change">
+                        <i class="ri-arrow-up-fill"></i>
+                        10% vs last month
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Monthly Expenses</h3>
+                        <button class="card-menu">
+                            <i class="ri-more-2-fill"></i>
+                        </button>
+                    </div>
+
+                    <div class="amount income-amount">$<span>1,890.00</span></div>
+
+                    <div class="change">
+                        <i class="ri-arrow-up-fill"></i>
+                        10% vs last month
+                    </div>
+                </div>
+
+                <div class="card my-card">
+                    <div class="card-header">
+                        <h3 class="card-title">My Card</h3>
+                        <button class="card-menu" style="color: white;">
+                            <i class="ri-more-2-fill"></i>
+                        </button>
+                    </div>
+
+                    <div style="font-size: 0.75rem; opacity: 0.8; margin-bottom: 1rem;">
+                        Linked to your primary wallet
+                    </div>
+                    <div class="card-chip"></div>
+                    <div class="card-number">5738 3439 0035 7880</div>
+                    <div class="card-holder"><span>Kitty</span></div>
+
+                    <div class="card-logo">
+                        <div class="card-logo-circle logo-red"></div>
+                        <div class="card-logo-circle logo-orange"></div>
+                    </div>
+
+                    <div class="spending-section">
+                        <div style="margin-bottom: 0.5rem; font-size: 0.875rem; opacity: 0.9;">
+                            Spending
+                            limit</div>
+                        <div class="spending-limit">$4000.00</div>
+                        <div class="spending-used">Used from $13400.00</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-      </header>
 
-      <main>
-            <div class="main-content">
-
-                  <div class="dashboard-grid">
-                        <div class="card">
-                              <div class="card-header">
-                                    <h3 class="card-title">Monthly Income</h3>
-                                    <button class="card-menu">
-                                          <i class="ri-more-2-fill"></i>
-                                    </button>
-                              </div>
-                              
-                              <div class="amount income-amount">$<span>2,560.00</span></div>
-                              
-                              <div class="change">
-                                    <i class="ri-arrow-up-fill"></i>
-                                    10% vs last month
-                              </div>
+            <!--  -->
+            <div class="chart-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Overview</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <div class="dropdown">
+                                Yearly <i class="ri-arrow-drop-down-line"></i>
+                            </div>
+                            <button class="filter-btn">
+                                <i class="ri-filter-fill"></i>
+                                Filter
+                            </button>
                         </div>
-                        
-                        <div class="card">
-                              <div class="card-header">
-                                    <h3 class="card-title">Monthly Expenses</h3>
-                                    <button class="card-menu">
-                                          <i class="ri-more-2-fill"></i>
-                                    </button>
-                              </div>
+                    </div>
 
-                              <div class="amount income-amount">$<span>1,890.00</span></div>
-
-                              <div class="change">
-                                    <i class="ri-arrow-up-fill"></i>
-                                    10% vs last month
-                              </div>
+                    <div class="chart-container">
+                        <div class="cahart-bar" style="height: 120px;"></div>
+                        <div class="cahart-bar" style="height: 80px;"></div>
+                        <div class="cahart-bar active" style="height: 200px;">
+                            <div class="tooltip">
+                                <div style="font-weight: 600;">April 2025</div>
+                                <div style="color: #36923e;">Income : $2000.00</div>
+                                <div style="color: #cf5b26;">Expenses : $1450.00</div>
+                            </div>
                         </div>
-
-                        <div class="card my-card">
-                              <div class="card-header">
-                                    <h3 class="card-title">My Card</h3>
-                                    <button class="card-menu" style="color: white;">
-                                          <i class="ri-more-2-fill"></i>
-                                    </button>
-                              </div>
-
-                              <div style="font-size: 0.75rem; opacity: 0.8; margin-bottom: 1rem;">
-                                    Linked to your primary wallet
-                              </div>
-                              <div class="card-chip"></div>
-                              <div class="card-number">5738 3439 0035 7880</div>
-                              <div class="card-holder"><span>Kitty</span></div>
-
-                              <div class="card-logo">
-                                    <div class="card-logo-circle logo-red"></div>
-                                    <div class="card-logo-circle logo-orange"></div>
-                              </div>
-
-                              <div class="spending-section">
-                                    <div style="margin-bottom: 0.5rem; font-size: 0.875rem; opacity: 0.9;">Spending limit</div>
-                                    <div class="spending-limit">$4000.00</div>
-                                    <div class="spending-used">Used from $13400.00</div>
-                                    <div class="progress-bar">
-                                          <div class="progress-fill"></div>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-
-                  <!--  -->
-
+                    </div>
+                </div>
             </div>
-      </main>
+        </div>
+    </main>
 
 
-      <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

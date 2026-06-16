@@ -267,16 +267,94 @@ body {
 }
 
 .chart-bar.active{
-    background: linear-gradient(to top, orange, orange);
+    background: linear-gradient(to top, #ff7333, #ff8331);
 }
 
 .chart-bar-income {
-    background: rgb(38, 134, 38);
+    background: #37bd37;
     margin-bottom: 4px;
     border-radius: 4px;
 }
 
 .chart-bar-expense {
-    background: rgb(134, 57, 38);
+    background: #ff7333;
     border-radius: 4px;
+}
+
+.chart-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: #c0c0c0;
+}
+
+/* expenses section */
+
+.expenses-breakdown {
+    margin-top: 1rem;
+}
+
+.total-expenses {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.period-tabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.period-tab {
+    color: #666;
+    cursor: pointer;
+}
+
+.period-tab.active {
+    font-weight: 600;
+    color: #021d02;
+}
+
+ .period-amounts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #666;
+ }
+
+ .period-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+ }
+
+ .color-bar {
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(to right, #fdb021, #e2e218, #75ea08);
+    margin-bottom: 1rem;
+ }
+
+.expense-catogories {
+    list-style: none;
+}
+
+.expense-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.category-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }

@@ -358,3 +358,25 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
+
+.category-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot-food {
+    background: #ff7333 ;
+}
+
+.dot-entertainment {
+    background: #e2e218 ;
+}
+
+.dot-investment {
+    background: #63c488 ;
+}
+
+.dot-shopping {
+    background: #e4f259 ;
+}

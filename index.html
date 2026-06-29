@@ -312,7 +312,7 @@
     <!-- Income Modal  -->
     <div id="incomeModal" class="modal">
         <div class="modal-content">
-            <div class="madal-header">
+            <div class="modal-header">
                 <h2 class="modal-title">Add Income</h2>
                 <button class="close-btn" onclick="closeModal('incomeModal')">&times;</button>
             </div>
@@ -357,7 +357,7 @@
 
     <div id="expenseModal" class="modal">
         <div class="modal-content">
-            <div class="madal-header">
+            <div class="modal-header">
                 <h2 class="modal-title">Add Income</h2>
                 <button class="close-btn" onclick="closeModal('expenseModal')">&times;</button>
             </div>
@@ -366,36 +366,36 @@
                 <form id="expenseForm" autocomplete="off">
                     <div class="form-group">
                         <label class="form-label">Amount</label>
-                        <input type="number" class="form-input" id="incomeAmount" placeholder="Enter Amount" required>
+                        <input type="number" class="form-input" id="expenseAmount" placeholder="Enter Expense" required>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Category</label>
-                        <select class="form-select" id="incomeCategory" required>
+                        <select class="form-select" id="expenseCategory" required>
                             <option value="">Select Category</option>
-                            <option value="salary">Salary</option>
-                            <option value="freelance">Freelance</option>
-                            <option value="bussiness">Bussiness</option>
-                            <option value="investments">Investments</option>
+                            <option value="food">Food</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="transport">Transport</option>
+                            <option value="utilities">Utilities</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Description</label>
-                        <input type="text" class="form-input" id="incomeDescription" placeholder="Enter Description" required>
+                        <input type="text" class="form-input" id="expenseDescription" placeholder="Enter Description" required>
                     </div>
 
                     <div class="form-group">
                         <label class="form-label">Date</label>
-                        <input type="date" class="form-input" id="incomeDate" required>
+                        <input type="date" class="form-input" id="expenseDate" required>
                     </div>
                 </form>
             </div>
 
             <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="closeModal('incomeModal')">Cancel</button>
-                <button class="btn btn-primary" onclick="addIncome()">Add Income</button>
+                <button class="btn btn-secondary" onclick="closeModal('expenseModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="addExpense()">Add Expense</button>
             </div>
         </div>
     </div>

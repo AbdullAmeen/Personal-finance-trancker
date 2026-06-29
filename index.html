@@ -272,12 +272,133 @@
                             <td><button class="action-btn"><i class="ri-more-fill"></i></button>
                             </td>
                         </tr>
+
+                        <tr>
+                            <td>Jan 24, 2023</td>
+                            <td>Subscription</td>
+                            <td>$449.00</td>
+                            <td><span class="status-success">Success</span></td>
+                            <td><button class="action-btn"><i class="ri-more-fill"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Jan 24, 2023</td>
+                            <td>Subscription</td>
+                            <td>$449.00</td>
+                            <td><span class="status-success">Success</span></td>
+                            <td><button class="action-btn"><i class="ri-more-fill"></i></button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
 
         </div>
     </main>
+
+    <!-- Income and Expexe button  -->
+
+    <div class="add-buttons">
+        <button class="fab fab-income" onclick="openIncomeModal()" title="Add Income">
+            <i class="ri-add-large-fill"></i>
+        </button>
+
+        <button class="fab fab-expense" onclick="openExpenseModal()" title="Add Expense">
+            <i class="ri-subtract-fill"></i>
+        </button>
+    </div>
+
+    <!-- Income Modal  -->
+    <div id="incomeModal" class="modal">
+        <div class="modal-content">
+            <div class="madal-header">
+                <h2 class="modal-title">Add Income</h2>
+                <button class="close-btn" onclick="closeModal('incomeModal')">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <form id="incomeForm" autocomplete="off">
+                    <div class="form-group">
+                        <label class="form-label">Amount</label>
+                        <input type="number" class="form-input" id="incomeAmount" placeholder="Enter Amount" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Category</label>
+                        <select class="form-select" id="incomeCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="salary">Salary</option>
+                            <option value="freelance">Freelance</option>
+                            <option value="bussiness">Bussiness</option>
+                            <option value="investments">Investments</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Description</label>
+                        <input type="text" class="form-input" id="incomeDescription" placeholder="Enter Description" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-input" id="incomeDate" required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('incomeModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="addIncome()">Add Income</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="expenseModal" class="modal">
+        <div class="modal-content">
+            <div class="madal-header">
+                <h2 class="modal-title">Add Income</h2>
+                <button class="close-btn" onclick="closeModal('expenseModal')">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <form id="expenseForm" autocomplete="off">
+                    <div class="form-group">
+                        <label class="form-label">Amount</label>
+                        <input type="number" class="form-input" id="incomeAmount" placeholder="Enter Amount" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Category</label>
+                        <select class="form-select" id="incomeCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="salary">Salary</option>
+                            <option value="freelance">Freelance</option>
+                            <option value="bussiness">Bussiness</option>
+                            <option value="investments">Investments</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Description</label>
+                        <input type="text" class="form-input" id="incomeDescription" placeholder="Enter Description" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-input" id="incomeDate" required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('incomeModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="addIncome()">Add Income</button>
+            </div>
+        </div>
+    </div>
 
 
     <script src="assets/js/script.js"></script>
